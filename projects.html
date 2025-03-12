@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Apeiros' home page">
+		<link rel="stylesheet" href="style.css">
+		<style type="text/css">
+
+		</style>
+		<title>Apeiros' page</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<nav id="navbar" class="hide-scrollbar">
+					<a href="/">home</a>
+					<a class="active" href="/projects.html" aria-current="page">projects</a>
+					<a href="https://img.apeiros.xyz/pool/view/1">photos</a>
+				</nav>
+			</header>
+
+			<div id="content-outer">
+				<div id="content">
+					<section id="diatom">
+						<h1>diatom (WIP)</h1>
+						<ul class="horiz-list">
+							<li>TypeScript</li>
+							<li><a href="https://aylur.github.io/astal">Astal</a></li>
+						</ul>
+						<img
+							src="/assets/projects/diatom.png"
+							alt="Image showing two windows open on a desktop accompanied by a thin information panel on the left; one is a code editor editing a TypeScript file, and the other is a GTK widget inspector showing the widget hierarchy."
+						>
+						<p>diatom is a custom Linux desktop shell. Currently, it has the bare minimum functionality needed (indicators for workspaces and battery level, on the thin bar at the left of the image). In the future, I will be adding a clock, a calendar with an event system, a notification centre, and system controls such as WiFi and Bluetooth (in a toggleable popup). Heavy stylistic inspiration was taken from <a href="https://github.com/phisch">phisch</a>'s "phrame" concept.</p>
+					</section>
+
+					<section id="qalc.nvim">
+						<h1><a href="https://github.com/Apeiros-46B/qalc.nvim/tree/rewrite">qalc.nvim</a></h1>
+						<ul class="horiz-list">
+							<li>Lua, C++</li>
+							<li>Neovim, <a href="https://github.com/Qalculate/libqalculate">libqalculate</a></li>
+						</ul>
+						<img
+							src="/assets/projects/qalc.png"
+							alt="Image showing qalc.nvim evaluating arithmetic, derivatives, and reporting errors in user input."
+						>
+						<p>qalc.nvim is a Neovim plugin that provides a reactive calculation environment (like a "1-dimensional spreadsheet"), making use of the libqalculate libary's advanced functions, such as unit conversion, symbolic manipulation/algebra, and calculus.</p>
+					</section>
+
+					<section id="lvox">
+						<h1>lvox (heavily WIP)</h1>
+						<ul class="horiz-list">
+							<li>Rust, GLSL</li>
+							<li>WebGPU</li>
+						</ul>
+						<img
+							src="/assets/projects/lvox.png"
+							alt="Image showing a voxelized sphere rendered in lvox."
+						>
+						<p>lvox will be a large-scale voxel rendering engine with support for extensibility through a plugin/mod system, intended for making games. Eventually, I hope to make a physics-oriented sandbox game on top of this, although that is definitely far in the future.</p>
+					</section>
+				</div>
+
+				<div class="flex-fill"></div>
+
+				<footer>
+					<div class="88x31s">
+						<!-- nothing here yet! -->
+					</div>
+					<ul class="horiz-list">
+						<li>© Apeiros 2025</li>
+						<li><a href="https://github.com/Apeiros-46B/www">source code</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
