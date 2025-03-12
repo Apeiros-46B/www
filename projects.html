@@ -5,10 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Apeiros' home page">
 		<link rel="stylesheet" href="style.css">
-		<style type="text/css">
-
-		</style>
-		<title>Apeiros' page</title>
+		<style type="text/css"></style>
+		<title>Apeiros' projects</title>
 	</head>
 	<body>
 		<main>
@@ -23,43 +21,93 @@
 
 			<div id="content-outer">
 				<div id="content">
+					<section id="qalc.nvim">
+						<h1><a href="https://github.com/Apeiros-46B/qalc.nvim/tree/rewrite">qalc.nvim</a></h1>
+						<ul class="horiz-list">
+							<li>Lua</li>
+							<li>C++</li>
+							<li>Neovim</li>
+							<li><a href="https://github.com/Qalculate/libqalculate">libqalculate</a></li>
+						</ul>
+						<img
+							src="/assets/projects/qalc.png"
+							alt="Image showing qalc.nvim evaluating arithmetic, derivatives, and reporting errors in user input."
+						>
+						<p>
+							<strong>qalc.nvim is a Neovim plugin that provides a reactive calculation environment</strong> (like a "1-dimensional spreadsheet"),
+							making use of the libqalculate libary's advanced functions, such as unit conversion, symbolic manipulation/algebra, and calculus.
+						</p>
+					</section>
+
+					<section id="raytracer">
+						<h1><a href="https://github.com/Apeiros-46B/raytracer">raytracer</a></h1>
+						<ul class="horiz-list">
+							<li>Rust</li>
+							<li>GLSL</li>
+							<li>OpenGL</li>
+							<li><a href="https://github.com/emilk/egui">egui</a></li>
+						</ul>
+						<img
+							src="/assets/projects/raytracer.png"
+							alt="Image showing three objects: a matte sphere, a reflective sphere, and a reflective surface. The reflective objects can be seen within each others' reflections. On the left, there are two floating windows for modifying the scene."
+						>
+						<p>
+							<strong>raytracer is a web and native app that can render simple objects</strong> (ellipsoids and boxes).
+							It uses a naive stochastic path-tracing method to approximate realistic lighting, implemented as a fragment shader in OpenGL.
+						</p>
+					</section>
+
 					<section id="diatom">
 						<h1>diatom (WIP)</h1>
 						<ul class="horiz-list">
 							<li>TypeScript</li>
+							<li>JSX</li>
+							<li>GTK</li>
 							<li><a href="https://aylur.github.io/astal">Astal</a></li>
 						</ul>
 						<img
 							src="/assets/projects/diatom.png"
 							alt="Image showing two windows open on a desktop accompanied by a thin information panel on the left; one is a code editor editing a TypeScript file, and the other is a GTK widget inspector showing the widget hierarchy."
 						>
-						<p>diatom is a custom Linux desktop shell. Currently, it has the bare minimum functionality needed (indicators for workspaces and battery level, on the thin bar at the left of the image). In the future, I will be adding a clock, a calendar with an event system, a notification centre, and system controls such as WiFi and Bluetooth (in a toggleable popup). Heavy stylistic inspiration was taken from <a href="https://github.com/phisch">phisch</a>'s "phrame" concept.</p>
-					</section>
-
-					<section id="qalc.nvim">
-						<h1><a href="https://github.com/Apeiros-46B/qalc.nvim/tree/rewrite">qalc.nvim</a></h1>
-						<ul class="horiz-list">
-							<li>Lua, C++</li>
-							<li>Neovim, <a href="https://github.com/Qalculate/libqalculate">libqalculate</a></li>
-						</ul>
-						<img
-							src="/assets/projects/qalc.png"
-							alt="Image showing qalc.nvim evaluating arithmetic, derivatives, and reporting errors in user input."
-						>
-						<p>qalc.nvim is a Neovim plugin that provides a reactive calculation environment (like a "1-dimensional spreadsheet"), making use of the libqalculate libary's advanced functions, such as unit conversion, symbolic manipulation/algebra, and calculus.</p>
+						<p>
+							<strong>diatom is a custom Linux desktop shell.</strong>
+							Currently, it has the bare minimum functionality needed (indicators for workspaces and battery level, on the thin bar at the left of the image).
+							In the future, I will be adding a clock, a calendar with an event system, a notification centre, and system controls such as WiFi and Bluetooth (in a toggleable popup).
+							Heavy stylistic inspiration was taken from <a href="https://github.com/phisch">phisch</a>'s "phrame" concept.</p>
 					</section>
 
 					<section id="lvox">
-						<h1>lvox (heavily WIP)</h1>
+						<h1>lvox (WIP)</h1>
 						<ul class="horiz-list">
-							<li>Rust, GLSL</li>
-							<li>WebGPU</li>
+							<li>Rust</li>
+							<li>WGSL</li>
+							<li>wgpu</li>
 						</ul>
 						<img
 							src="/assets/projects/lvox.png"
 							alt="Image showing a voxelized sphere rendered in lvox."
 						>
-						<p>lvox will be a large-scale voxel rendering engine with support for extensibility through a plugin/mod system, intended for making games. Eventually, I hope to make a physics-oriented sandbox game on top of this, although that is definitely far in the future.</p>
+						<p>
+							<strong>lvox will be a large-scale voxel rendering engine</strong>
+							with support for extensibility through a plugin/mod system, intended for making games.
+							Eventually, I hope to make a physics-oriented sandbox game on top of this, although that is definitely far in the future.
+						</p>
+					</section>
+
+					<section id="arp">
+						<h1>arp (WIP)</h1>
+						<ul class="horiz-list">
+							<li>Rust</li>
+							<li>Lua</li>
+						</ul>
+						<img
+							src="/assets/projects/arp.png"
+							alt="Image showing two function definitions in arp, for updating a Game of Life grid."
+						>
+						<p>
+							<strong>arp will be a compiled, array-oriented programming language</strong> with an emphasis on metaprogramming and macros.
+							It will target Lua, and eventually LLVM IR and potentially SPIR-V in the future.
+						</p>
 					</section>
 				</div>
 
