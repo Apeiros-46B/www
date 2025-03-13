@@ -162,8 +162,6 @@ ul.inset-list > :nth-last-child(n+2) {
 }
 
 ul.horiz-list {
-	display: flex;
-	flex-flow: row nowrap;
 	font-size: 90%;
 	list-style-type: none;
 	margin-left: 0;
@@ -171,7 +169,6 @@ ul.horiz-list {
 ul.horiz-list > li {
 	display: inline-block;
 	line-height: 100%;
-	margin-right: 0.3rem;
 }
 ul.horiz-list > li:nth-last-child(n+2)::after {
 	content: " \00b7";
@@ -228,6 +225,18 @@ nav > a:hover {
 nav > a.active {
 	background-color: var(--bg3);
 	color: var(--fg1);
+}
+/* fade out to the right to indicate scrollability */
+nav::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, #2b333900, #2b3339aa 100%);
+  width: 4rem;
+  height: 100%;
 }
 /* }}} */
 
