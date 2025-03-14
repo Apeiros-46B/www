@@ -7,15 +7,17 @@
 		<link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
 		<link rel="stylesheet" href="style.css">
 		<style type="text/css">
-			@container (min-width: 344px) {
+			@container (min-width: 355px) {
 				#socials-outer {
 					display: grid;
 					justify-content: center;
 				}
 			}
-			@container (max-width: 343px) {
+			@container (max-width: 354px) {
 				#socials {
-					flex-direction: column;
+					display: flex;
+					flex-flow: column nowrap;
+					gap: 0.2rem;
 				}
 				#socials > li {
 					margin-right: 0;
