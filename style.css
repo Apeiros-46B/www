@@ -66,6 +66,9 @@ table {
 		--bg3: #3a454a;
 		--fg1: #d3c6aa;
 		--fg2: #859289;
+
+		--bg1-clear: #2b333900;
+		--bg1-faded: #2b3339aa;
 	}
 }
 @media (prefers-color-scheme: light) {
@@ -84,6 +87,9 @@ table {
 		--bg3: #ffffff;
 		--fg1: #333333;
 		--fg2: #777777;
+
+		--bg1-clear: #ebebeb00;
+		--bg1-faded: #ebebebaa;
 	}
 }
 :root {
@@ -236,7 +242,7 @@ nav::after {
   top: 0;
   right: 0;
   pointer-events: none;
-  background-image: linear-gradient(to right, #2b333900, #2b3339aa 100%);
+  background-image: linear-gradient(to right, var(--bg1-clear) 0%, var(--bg1-faded) 100%);
   width: 4rem;
   height: 100%;
 }
